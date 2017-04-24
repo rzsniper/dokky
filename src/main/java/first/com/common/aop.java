@@ -11,7 +11,7 @@ public class aop {
 	public Object log(ProceedingJoinPoint joinPoint) throws Throwable {
 
 		String signatureString = joinPoint.getSignature().toString();
-
+v 
 		if(log.isDebugEnabled()){ log.debug(signatureString + "   before");	}
 		if(log.isInfoEnabled()){ log.info(signatureString + "   before"); }
 		if(log.isErrorEnabled()){ log.error(signatureString + "   before"); }
